@@ -5,6 +5,8 @@ SnailRace is an interactive web-based game where users can join and race snails 
 How This Was Built Using ChatGPT
 This project was built with the assistance of ChatGPT, an AI language model developed by OpenAI. ChatGPT provided code snippets, suggested best practices, and guided the development process. The AI helped in structuring the project, writing HTML, CSS, and JavaScript code, and implementing features such as real-time user interaction, grid updates, and the finish screen animation.
 
+![image](screenshot.jpg)
+
 --- 
 ## How to Install
 
