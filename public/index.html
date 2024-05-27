@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnailRace</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container mt-4">
+    <header class="text-center mb-4">
+        <h1>SnailRace</h1>
+        <p id="usernameDisplay" class="lead">Welcome, <span id="username"></span></p>
+        <div id="userCount" class="badge badge-info">Users online: 0</div>
+    </header>
+
+    <main>
+        <ul id="messages" class="list-group mb-4"></ul>
+        <div id="grid" class="mb-4"></div>
+        <div id="images" class="d-flex justify-content-around">
+            <img src="images/d4.png" alt="d4" data-number="4" data-color="orange" class="dice-img">
+            <img src="images/d6.png" alt="d6" data-number="6" data-color="purple" class="dice-img">
+            <img src="images/d8.png" alt="d8" data-number="8" data-color="blue" class="dice-img">
+            <img src="images/d10.png" alt="d10" data-number="10" data-color="green" class="dice-img">
+            <img src="images/d12.png" alt="d12" data-number="12" data-color="yellow" class="dice-img">
+        </div>
+    </main>
+
+    <div id="finishScreen" class="finish-screen">
+        <div class="fireworks">
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+        </div>
+        <h2 id="winnerMessage">Winner: <span id="winnerName"></span></h2>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
